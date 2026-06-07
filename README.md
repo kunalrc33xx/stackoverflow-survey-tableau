@@ -5,7 +5,7 @@
 ![Respondents](https://img.shields.io/badge/Survey_Respondents-49%2C191-green?style=for-the-badge)
 ![Countries](https://img.shields.io/badge/Countries-178-blue?style=for-the-badge)
 
-**Course:** BUDT758D, Data Visualization and Web Analytics | University of Maryland, Robert H. Smith School of Business  
+**Course:** BUDT758D, Data Visualization and Web Analytics | University of Maryland, Robert H. Smith School of Business
 **Team:** Group 1 | **Year:** 2025
 
 [![Open on Tableau Public](https://img.shields.io/badge/Live_Dashboard-Open_on_Tableau_Public-E97627?style=for-the-badge&logo=Tableau&logoColor=white)](https://public.tableau.com/app/profile/kunal.roy.chowdhury/viz/StackOverflowSurveyTableauStoryGroup1/OurTableauStory)
@@ -83,7 +83,7 @@ AI adoption, learning patterns, and task delegation behavior.
 | Learned AI tools required for job/career | 16,400 |
 | Learned AI tools for personal use | 14,000 |
 
-**AI Agents Use (bubble chart):** The largest bubble is "No, and I don't plan to," followed by "No, but I plan to" — showing that while AI tool adoption is high, agentic AI use is still nascent.
+**AI Agents Use (bubble chart):** The largest bubble is "No, and I don't plan to," followed by "No, but I plan to." While AI tool adoption is high, agentic AI use is still nascent.
 
 **Tasks Planned vs. Not Planned for AI:** Documentation and predictive modeling top the "planned" list; code review and architecture decisions remain firmly in human hands.
 
@@ -94,9 +94,9 @@ AI adoption, learning patterns, and task delegation behavior.
 ### Data Sources
 | Source | Description |
 |---|---|
-| `survey_results_public` | Main Stack Overflow 2025 Annual Survey dataset |
-| `so_usage_clean_v2` | Cleaned usage and platform engagement data |
-| `so_content_exploded` | Exploded content preference records (one row per format) |
+| survey_results_public | Main Stack Overflow 2025 Annual Survey dataset |
+| so_usage_clean_v2 | Cleaned usage and platform engagement data |
+| so_content_exploded | Exploded content preference records (one row per format) |
 
 The workbook uses Tableau's federated data source model, joining survey responses across multiple filtered views.
 
@@ -108,10 +108,10 @@ The workbook uses Tableau's federated data source model, joining survey response
 ### Key Calculated Fields
 | Field | Formula |
 |---|---|
-| % With SO Account | `SUM([Has SO Account]) / COUNT([ResponseId])` |
-| % Visit Weekly or More | `SUM([Weekly Visitor]) / COUNT([ResponseId])` |
-| % Active AI Users | `SUM([Active AI]) / COUNT([ResponseId])` |
-| % High Friction Users | `SUM([High Friction]) / COUNT([ResponseId])` |
+| % With SO Account | SUM([Has SO Account]) / COUNT([ResponseId]) |
+| % Visit Weekly or More | SUM([Weekly Visitor]) / COUNT([ResponseId]) |
+| % Active AI Users | SUM([Active AI]) / COUNT([ResponseId]) |
+| % High Friction Users | SUM([High Friction]) / COUNT([ResponseId]) |
 
 ### Dashboard Design Choices
 - **Orange = Active AI User** consistently across all charts for visual continuity
@@ -153,12 +153,9 @@ View the fully interactive story online (no software required):
 All filters are live. Use the Country and AI User Group dropdowns to explore specific segments.
 
 ### Option 2, Tableau Desktop
-1. Download `Stack Overflow Survey Tableau Story Team 1-Final.twbx` from this repo
-2. Open with Tableau Desktop (version 2023.1 or later recommended)
-3. All data is packaged inside the `.twbx` — no external database connection required
-4. Navigate the story tabs in order for the full narrative experience
+The packaged workbook (.twbx) is 148MB and exceeds GitHub's file size limit, so it is not hosted here. To open it locally, access the file via the course submission folder and open it with Tableau Desktop (version 2023.1 or later). All data is packaged inside the file; no external database connection required.
 
 ---
 
-*Data source: Stack Overflow Annual Developer Survey 2025, [survey.stackoverflow.co](https://survey.stackoverflow.co)*  
+*Data source: Stack Overflow Annual Developer Survey 2025, [survey.stackoverflow.co](https://survey.stackoverflow.co)*
 *Built with Tableau Desktop | BUDT758D, University of Maryland*
